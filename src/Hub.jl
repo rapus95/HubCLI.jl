@@ -30,7 +30,7 @@ module Hub
 
     Important: Shreds the passed `SecretBuffer`s after usage.
 
-    `remote_gh_url` be something like "JuliaWeb/Github.jl". `pairs` is a list of `"key"=>value` pairs where
+    `remote_gh_url` be something like "rapus95/HubCLI.jl". `pairs` is a list of `"key"=>value` pairs where
     the value needs to be a `Base.SecretBuffer`.
     """
     function push_secret!(remote_gh_url, pairs::Pair{String,Base.SecretBuffer}...)
