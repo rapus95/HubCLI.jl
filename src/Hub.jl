@@ -43,6 +43,4 @@ module Hub
             isempty(ack[1]) || error(ack[2])
         end
     end
-
-    function 
 end
