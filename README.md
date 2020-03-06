@@ -10,7 +10,7 @@ HubCLI exports the module `Hub` which contains all functions. The decision was m
 ```julia
 Hub.hub(args...; [input])
 ```
-shells out to `hub` passing arguments `args`. If `input` is a Buffer/Stream, it will be passed as input to the shell.
+shells out to `hub` passing arguments `args`. `input` will be passed as stdin.
 
 ```julia
 Hub.push_secret!(gh_repo, pairs::Pair{String,Base.SecretBuffer}...)
