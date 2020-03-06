@@ -9,5 +9,6 @@ Sodium = "4f5b5e99-b0ad-42cd-b47a-334e172ec8bd"
 hub_jll = "1414f103-7607-5802-8977-fcefe8d49cb7"
 
 [compat]
+JSON3 = "1"
 Sodium = "1.1.1"
 julia = "1.3"
