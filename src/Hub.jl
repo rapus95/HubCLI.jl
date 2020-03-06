@@ -2,6 +2,12 @@ module Hub
     using hub_jll, Sodium, JSON3
     export push_secret!
 
+
+    """
+    hub(args...; input=nothing)::(stdout::String, stderr::String, errorcode::Int)
+
+    shells out to `hub`, passing `args` as arguments. If specified, `input` will be passed as stdin.
+    """
     function hub(args...; input=nothing)
         hub_jll.hub() do hub
             out = Pipe()
